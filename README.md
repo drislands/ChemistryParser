@@ -8,12 +8,14 @@ Here it is, split from its original single-file form into multiple class files a
 
 ## The Grammer
 
+```
 expr   ::= atom { atom }
 group  ::= wrap | elem
 wrap   ::= "(" expr ")" | "[" expr "]" | "{" expr "}"
 atom   ::= group [ count ]
 count  ::= /[1-9][0-9]*/
 elem   ::= /[A-Z]([a-z][a-z]?)?/
+```
 
 ### Translation
 - An `expr` is made up of one or more `atom`s in a row.
