@@ -6,7 +6,7 @@ What I do remember is working on this feverishly, without putting it to version 
 
 Here it is, split from its original single-file form into multiple class files as it should have been.
 
-## The Grammer
+## The Grammar
 
 ```
 expr   ::= atom { atom }
